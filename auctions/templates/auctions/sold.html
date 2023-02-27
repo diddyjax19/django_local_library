@@ -1,0 +1,7 @@
+{% extends "auctions/layout.html" %}
+
+{% block body %}
+<h1>Congratulations!</h1>
+<h3>Item: {{ auction.title }} has been sold for: {{ auction.current_price }} $.</h3>
+Complete this purchase by contacting: <strong>{{ winner.username }}</strong>.
+{% endblock %}

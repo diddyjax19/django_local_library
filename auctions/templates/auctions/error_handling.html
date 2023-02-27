@@ -1,0 +1,11 @@
+{% extends "auctions/layout.html" %} {% load static %} {% block body %}
+<div class="error-container">
+    <!-- affix 'static to internal links to help django automatically detect' -->
+    <img src="{% static 'auctions/img/Decrease_3.png' %}" alt="Error image" style="width:25%">
+    <div class="error-code">Error code: {{ code }}</div>
+    <div class="error-message"> Error message
+        <q>{{ message }}</q>
+    </div>
+</div>
+
+{% endblock %}
